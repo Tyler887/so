@@ -29,7 +29,7 @@ $ so question ask
 # (i) Asked question successfully.
 # (?) Open the question in your browser (y/n)? Yes
 # (i) Opening...
-# --> xdg-open stackoverflow.com/questions/XXXXXXXXX/syntaxerror-(-was-never-closed
+# --> xdg-open stackoverflow.com/questions/XXXXXXXXX/syntaxerror--was-never-closed
 ```
 If `micro` was not found, this throws an error. Install the `micro` editor
 if you do not have it, as this app depends on it.
