@@ -11,9 +11,9 @@ jobs:
     - name: Install sphinx and furo theme
       run: pip3 install furo sphinx
     - name: Build Sphinx docs
-      run: make html
+      run: make html -C documentation
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
         branch: gh-pages # The branch the action should deploy to.
-        folder: docs/html # The folder the action should deploy.
+        folder: documentation/build/html # The folder the action should deploy.
