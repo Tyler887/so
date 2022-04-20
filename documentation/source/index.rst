@@ -12,11 +12,11 @@ Welcome to StackOverflow Cli's documentation!
 
 The Stack Overflow CLI is a free and open-source command-line for StackOverflow.com, a Stack Exchange community.
 
--- warning ::
+.. warning ::
    
    Stack Overflow CLI is in pre-alpha. It's only for testing.
 
--- note ::
+.. note ::
    
    Stack Overflow CLI is licensed under the MIT (Expat) license.
 
