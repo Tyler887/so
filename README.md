@@ -20,10 +20,14 @@ $ so login
 Ask a new question and it will appear on Stack Overflow:
 ```shell
 $ so question ask
-# (?) Title (15+ chars): Python has problem
-# /!\ WARNING: Many questions with a similar title received downvotes
-#              or requests for feedback. Please update your title.
-# (?) Title (15+ chars): SyntaxError: "(" was never closed
+# (?) Title (15+ chars): I got syntaxerror
+#  _
+# /!\ WARNING: Many questions with a similar title received feedback (e.g. downvotes,
+# ***          comments, or requests for improvements). Please update your title to
+#              be more descriptive.
+# (?) Title (15+ chars): SyntaxError: '(' was never closed
+# >>> Checking for similar questions...
+# 
 # (?) Body [Press enter to launch micro]
 # (?) Tags (up to 5, at least 1 required): [python] [python-3.10] [brackets]
 # (i) Asked question successfully.
@@ -69,3 +73,4 @@ $ so help
 #
 # This program is a work-in-progress. Please fork the project on github:
 # https://github.com/Tyler887/so
+```
