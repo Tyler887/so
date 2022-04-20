@@ -27,9 +27,45 @@ $ so question ask
 # (?) Body [Press enter to launch micro]
 # (?) Tags (up to 5, at least 1 required): [python] [python-3.10] [brackets]
 # (i) Asked question successfully.
-# (?) Open the question in your browser (y/n)? Yes
-# (i) Opening...
-# --> xdg-open stackoverflow.com/questions/XXXXXXXXX/syntaxerror--was-never-closed
 ```
 If `micro` was not found, this throws an error. Install the `micro` editor
-if you do not have it, as this app depends on it.
+if you do not have it, as this app depends on it. To avoid this, use
+the `--nano` option.
+### More info
+Learn how to use `so`:
+```shell
+$ so help
+#         \\
+#           \\
+#      \=    \\            S7(&(^*F&*$  &(&(&*HF&JVIKF/       g           C65%()*%)%  O   / 
+#        \=    \\         a                    O            v   S        F            V  /
+#          \=   \\         T)(%*R)F*)(         A          >       q      V            S / Over
+#            \==  \\                  a        V        a*&>^3-a=#+vD    A            A \ Flow
+#     ¯¯¯       \==                   a        Q       /             \   C            N  \^^^^
+#        ¯¯¯¯¯            TFFG5%$%*%           Q      /               \   RK%KG(%G%a  N   \
+#    _______  ¯¯¯¯                                      CLI
+#           ____
+# | ____________ |
+# |              |
+# ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+#
+# Usage: so command [subcommand] [options]
+#
+# Options:
+#     -v, --version       Print the version and exit. Same as "so version".
+#     -h, --help, -?      Print this message and exit. Same as "so help".
+#     --nano              If nano was found, use it for editing text.
+#     --no-color          Do not display any colors. Useful if the left of
+#                         the logo above is a broken Stack Overflow logo.
+#     --meta              Target MSO (Meta Stack Overflow) instead of
+#                         Stack Overflow.
+#
+# Commands: (indented commands are subcommands of their intended command)
+#     question            Manage questions
+#       ask               Ask a question
+#       review-edit       Review edits [Minimum reputation: 2k]
+#     answer              Manage answers
+#     help                Show this message
+#
+# This program is a work-in-progress. Please fork the project on github:
+# https://github.com/Tyler887/so
