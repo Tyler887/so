@@ -1,0 +1,19 @@
+name: "Build Docs"
+on: 
+- pull_request
+- push
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install sphinx and furo theme
+      run: pip3 install furo sphinx
+    - name: Build Sphinx docs
+      run: make html
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: docs/html # The folder the action should deploy.
