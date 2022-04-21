@@ -76,6 +76,6 @@ $ so help
 ```
 ## Python 3 Support
 Python 3.6+ is supported. The binaries do not require Python at all, but running
-or compiling the scripts requires Python.
+or compiling the scripts requires Python. Older versions are not supported.
 ## Python 2 Support
 Python 2.x is not supported.
