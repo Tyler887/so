@@ -78,4 +78,5 @@ $ so help
 Python 3.6+ is supported. The binaries do not require Python at all, but running
 or compiling the scripts requires Python. Older versions are not supported.
 ## Python 2 Support
-Python 2.x is not supported.
+Python 2.x is not supported. When compiling, make sure you have Python 3.
+If you have both, remember to execute Python 3 instead of Python 2.
