@@ -74,3 +74,8 @@ $ so help
 # This program is a work-in-progress. Please fork the project on github:
 # https://github.com/Tyler887/so
 ```
+## Python 3 Support
+Python 3.6+ is supported. The binaries do not require Python at all, but running
+or compiling the scripts requires Python.
+## Python 2 Support
+Python 2.x is not supported.
