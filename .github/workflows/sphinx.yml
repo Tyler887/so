@@ -8,11 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Install sphinx and furo theme
-      run: pip3 install furo sphinx
+    - name: Install Sphinx
+      run: sudo apt-get update && sudo apt-get install python3-sphinx -y
+    - name: Install furo theme from PyPI
+      run: pip3 install furo
     - name: Build Sphinx docs
       run: make html -C documentation
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
         branch: gh-pages # The branch the action should deploy to.
