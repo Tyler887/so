@@ -14,7 +14,7 @@ import nox
 @nox.session(reuse_venv=True)
 def docs(session):
     # Generate documentation into `build/docs`
-    session.run("sphinx-build", "-b", "dirhtml", "-v", "documentation/", "build/docs")
+    session.run("sphinx-build", "-b", "dirhtml", "-v", "documentation/source/", "build/docs")
 
 
 @nox.session(name="docs-live", reuse_venv=True)
