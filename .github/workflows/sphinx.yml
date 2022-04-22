@@ -10,10 +10,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install Sphinx
       run: sudo apt-get update && sudo apt-get install python3-sphinx -y
-    - name: Install furo theme from PyPI
-      run: pip3 install furo
+    - name: Install furo theme and nox tool from PyPI
+      run: pip3 install furo nox
     - name: Build Sphinx docs
-      run: make html -C documentation
+      run: nox -s docs
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
