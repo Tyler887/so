@@ -9,25 +9,6 @@ import os
 
 import nox
 
-PACKAGE_NAME = "furo"
-nox.options.sessions = ["lint", "test"]
-
-# fmt: off
-assert (
-    _determine_versions("2021.08.17.dev44", date=datetime.date(2021, 8, 17))
-    == ("2021.08.17.44", "2021.08.17.dev45")
-), "same day 1"
-assert (
-    _determine_versions("2021.08.17.dev1", date=datetime.date(2021, 8, 17))
-    == ("2021.08.17.1", "2021.08.17.dev2")
-), "same day 2"
-assert (
-    _determine_versions("2021.08.17.dev44", date=datetime.date(2021, 8, 18))
-    == ("2021.08.18", "2021.08.18.dev1")
-), "different day"
-# fmt: on
-
-
 #
 # Development Sessions
 #
