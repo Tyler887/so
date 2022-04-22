@@ -29,7 +29,7 @@ $ so question ask
 # >>> Checking for similar questions...
 # 
 # (?) Body [Press enter to launch micro]
-# (?) Tags (up to 5, at least 1 required): [python] [python-3.10] [brackets]
+# (?) Tags (up to 5, at least 1 required): [python] [python-3.x] [brackets]
 # (i) Asked question successfully.
 ```
 If `micro` was not found, this throws an error. Install the `micro` editor
