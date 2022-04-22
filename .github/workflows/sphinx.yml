@@ -4,7 +4,7 @@ on:
 - push
 
 jobs:
-  docs:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -14,10 +14,25 @@ jobs:
       run: pip3 install furo
     - name: Build Sphinx docs
       run: make html -C documentation
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.3.0
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
       with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: documentation/build/html # The folder the action should deploy.
+        path: ./documentation/build/html
+        name: docs
     - name: Uninstall Sphinx
       run: sudo apt-get purge python3-sphinx -y
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    needs: build
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+           name: docs
+           path: ./doc-build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: doc-build # The folder the action should deploy.
