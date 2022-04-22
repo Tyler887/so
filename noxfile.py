@@ -3,7 +3,6 @@
 
 """Development automation
 """
-import datetime
 import glob
 import os
 
@@ -14,18 +13,12 @@ import nox
 #
 @nox.session(reuse_venv=True)
 def docs(session):
-    session.install("-r", "docs/requirements.txt")
-    session.install(".")
-
     # Generate documentation into `build/docs`
-    session.run("sphinx-build", "-b", "dirhtml", "-v", "docs/", "build/docs")
+    session.run("sphinx-build", "-b", "dirhtml", "-v", "documentation/", "build/docs")
 
 
 @nox.session(name="docs-live", reuse_venv=True)
 def docs_live(session):
-    session.install("-r", "docs/requirements.txt")
-    session.install("-e", ".", "sphinx-theme-builder[cli]")
-
     # Generate documentation into `build/docs`
     session.run("stb", "serve", "docs/")
 
@@ -40,3 +33,11 @@ def lint(session):
         args.append("--show-diff-on-failure")
 
     session.run("pre-commit", "run", *args)
+
+@nox.session
+def compile(session):
+    print("Installing PyInstaller...")
+    session.install("PyInstaller")
+    print("Compiling...")
+    os.system("pyinstaller --name so --console StackOverflowCommandLine.py")
+    print("Done!")
