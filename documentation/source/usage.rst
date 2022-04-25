@@ -35,7 +35,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
 
 .. tab:: Windows
    
-   .. info::
+   .. note::
       
       SO CLI is not yet avaliable via Windows Package Manager. If popularity grows, I'll submit
       SO CLI to the Microsoft WinGet community repository for review when the project
