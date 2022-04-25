@@ -191,10 +191,13 @@
         <article role="main">
           <div class="toctree-wrapper compound">
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This document can also be viewed using <code class="docutils literal notranslate"><span class="pre">so</span> <span class="pre">help</span> <span class="pre">howto</span></code>.</p>
+</div>
 <div class="section" id="using-the-so-cli">
 <h1>Using the SO CLI<a class="headerlink" href="#using-the-so-cli" title="Permalink to this headline">#</a></h1>
-<p>This is a tutorial about how to use the CLI. This tutorial is specific to GNU/Linux (including WSL)
-and macOS, including BSD descendants. Any help for Windows is welcome.</p>
+<p>This is a tutorial about how to use the SO CLI.</p>
 <div class="section" id="installing">
 <h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">#</a></h2>
 <p>It’s easy to install <code class="docutils literal notranslate"><span class="pre">so</span></code>. However, the way to install it depends on your OS.</p>
@@ -231,27 +234,6 @@ PowerShell 7) and run:</p>
 </div>
 <div class="section" id="using-it">
 <h2>Using it<a class="headerlink" href="#using-it" title="Permalink to this headline">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The SO CLI uses the Stack Exchange API, which requires you to approve
-the SO CLI when you try to use it.</p>
-<p>If you run SO CLI without authenticating to the API, this error
-will appear:</p>
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">Error</span><span class="p">:</span> <span class="n">Please</span> <span class="n">authenticate</span> <span class="n">to</span> <span class="n">the</span> <span class="n">API</span> <span class="n">using</span><span class="p">:</span> <span class="n">so</span> <span class="n">login</span>
-    <span class="n">The</span> <span class="n">Stack</span> <span class="n">Overflow</span> <span class="n">CLI</span> <span class="n">uses</span> <span class="n">the</span> <span class="n">Stack</span> <span class="n">Exchange</span> <span class="n">API</span><span class="p">,</span> <span class="n">so</span> <span class="n">you</span> <span class="n">need</span>
-    <span class="n">to</span> <span class="n">login</span> <span class="n">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">SO</span> <span class="n">CLI</span><span class="o">.</span>
-
-    <span class="n">If</span> <span class="n">you</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">have</span> <span class="n">a</span> <span class="n">Stack</span> <span class="n">Overflow</span> <span class="n">account</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">safely</span>
-    <span class="n">remove</span> <span class="n">this</span> <span class="n">program</span> <span class="kn">from</span> <span class="nn">your</span> <span class="n">system</span><span class="p">:</span> <span class="n">sudo</span> <span class="n">rm</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">so</span>
-</pre></div>
-</div>
-</div>
-<p>So run <code class="docutils literal notranslate"><span class="pre">so</span> <span class="pre">login</span></code>. Already logged in? If you moved to another account or just deleted your
-Stack Overflow profile, you need to run <code class="docutils literal notranslate"><span class="pre">so</span> <span class="pre">logout</span></code> to remove the app from
-your SEN account.</p>
-</div>
 <p><code class="docutils literal notranslate"><span class="pre">so</span></code> or <code class="docutils literal notranslate"><span class="pre">so</span> <span class="pre">help</span></code> will list commands.</p>
 <p><code class="docutils literal notranslate"><span class="pre">so</span> <span class="pre">feed</span> <span class="pre">&lt;type&gt;</span></code> allows you to view the RSS feed of questions/answers. It
 is useful to check this out everyday so you can answer questions that still
