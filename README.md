@@ -4,7 +4,7 @@ I had to write it because I'm a developer, but `stackoverflow.com` is going
 weird and I almost have no way to do SO-related stuff from my CLI.
 
 For more info, see [the Stack Apps listing](https://stackapps.com/questions/9375/placeholder-stackoverflow-cli)
-or the [docs](https://tyler887.github.io.so).
+or the [docs](https://tyler887.github.io/so).
 ## Features
 * Use a small simple editor (`micro`)
 * Works properly in scripts
