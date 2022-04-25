@@ -27,7 +27,7 @@ from `Stack Apps
 
 Using it
 --------
-.. tip::
+.. warning::
 
   The SO CLI uses the Stack Exchange API, which requires you to approve
   the SO CLI when you try to use it.
