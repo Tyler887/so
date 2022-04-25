@@ -55,5 +55,6 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 html_theme_options = {
-  "announcement": "Stack Overflow CLI is currently in development. Please <a href=\"https://github.com/Tyler887/so/issues\">complete the project</a>."
+  # Backslashes are neccessary to prevent SyntaxErrors
+  "announcement": "Stack Overflow CLI is currently in development. Please <a href=\"https://github.com/Tyler887/so/pulls\">complete the project</a>."
 }
