@@ -4,22 +4,45 @@
 
 Using the SO CLI
 ================
-This is a tutorial about how to use the CLI. This tutorial is specific to Linux/WSL
-and macOS. Any help for Windows is welcome.
+This is a tutorial about how to use the CLI. This tutorial is specific to GNU/Linux (including WSL)
+and macOS, including BSD descendants. Any help for Windows is welcome.
 
 Installing
 ----------
-Assuming that you have `Python
-<https://python.org>`_ (3.6 or newer required due to F-strings), including PyInstaller and everything in
-`the SO CLI requirements.txt
-<https://github.com/Tyler887/so/blob/main/requirements.txt>`_, you **can** install ``so``
-by using this command (works for and executes BASH):
+It's easy to install ``so``. However, the way to install it depends on your OS.
 
-.. code-block:: shell
+.. tab:: macOS, *BSD or GNU/Linux (Unix-like)
+   
+   .. warning::
+      
+      Stack Overflow CLI is not tested on macOS or *BSD, only on GNU/Linux and Windows.
+   
+   Assuming that you have `Python
+   <https://python.org>`_ (3.6 or newer required due to F-strings), including PyInstaller and everything in
+   `the SO CLI requirements.txt
+   <https://github.com/Tyler887/so/blob/main/requirements.txt>`_, you **can** install ``so``
+   by using this command (works for and executes BASH):
 
-   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Tyler887/so/main/install.sh)"
+   .. code-block:: shell
 
-This command may install Python if it is missing.
+      bash -c "$(curl -fsSL https://raw.githubusercontent.com/Tyler887/so/main/install.sh)"
+
+   This command may install Python if it is missing.
+
+.. tab:: Windows
+   
+   .. warning::
+      
+      SO CLI is not yet avaliable via Windows Package Manager. If popularity grows, I'll submit
+      SO CLI to the Microsoft WinGet community repository for review when the project
+      is ready to be avaliable to the public.
+   
+   To install ``so``, launch PowerShell (recommended Windows Powershell 5.1 or
+   PowerShell 7) and run:
+   
+   .. code-block:: powershell
+      
+      Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Tyler887/so/raw/main/install.ps1')
 
 If you are unable to execute this command, copy and paste the installation script
 from `Stack Apps
