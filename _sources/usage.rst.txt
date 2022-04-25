@@ -28,6 +28,10 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
       bash -c "$(curl -fsSL https://raw.githubusercontent.com/Tyler887/so/main/install.sh)"
 
    This command may install Python if it is missing.
+   
+   If you are unable to execute this command, copy and paste the installation script
+   from `Stack Apps
+   <https://stackapps.com/questions/9375/placeholder-stackoverflow-cli>`_.
 
 .. tab:: Windows
    
@@ -43,10 +47,6 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
    .. code-block:: powershell
       
       Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Tyler887/so/raw/main/install.ps1')
-
-If you are unable to execute this command, copy and paste the installation script
-from `Stack Apps
-<https://stackapps.com/questions/9375/placeholder-stackoverflow-cli>`_.
 
 Using it
 --------
