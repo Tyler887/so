@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install Sphinx
-      run: sudo apt-get update && sudo apt-get install python3-sphinx -y
+      run: sudo apt-get update && sudo apt-get install -y python3-sphinx
     - name: Install furo theme and nox tool from PyPI
       run: pip3 install furo nox
     - name: Build Sphinx docs
@@ -20,7 +20,7 @@ jobs:
         path: ./build/docs
         name: docs
     - name: Uninstall Sphinx
-      run: sudo apt-get purge python3-sphinx -y
+      run: sudo dpkg --purge python3-sphinx
   deploy:
     runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
