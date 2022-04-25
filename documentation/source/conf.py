@@ -32,6 +32,7 @@ release = 'main from git'
 # ones.
 extensions = [
   "sphinx_inline_tabs",
+  "sphinx_design",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
