@@ -6,12 +6,12 @@
    
    This document can also be viewed using ``so help howto``.
 
-Using the SO CLI
+Using the SO CLI :octicon:`plug`
 ================
 This is a tutorial about how to use the SO CLI.
 
-Installing
-----------
+:octicon:`rocket` Installing
+----------------------------
 It's easy to install ``so``. However, the way to install it depends on your OS.
 
 .. tab:: macOS, BSD or GNU/Linux (Unix-like)
@@ -51,7 +51,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
       
       Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Tyler887/so/raw/main/install.ps1')
 
-Using it
+:octicon:`play` Using it
 --------
 .. admonition:: Todo
 
