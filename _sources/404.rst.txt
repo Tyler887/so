@@ -1,4 +1,4 @@
-.. error:: 404 Not Found
+.. error::
    
-   This document does not exist. It might have existed before, try checking `the Internet Archive's Wayback Machine
+   **This document does not exist.** It might have existed before, try checking `the Internet Archive's Wayback Machine
    <https://web.archive.org>`_. Thank you!
