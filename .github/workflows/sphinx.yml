@@ -33,7 +33,7 @@ jobs:
            name: docs
            path: ${{ github.workspace }}/doc-build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: doc-build # The folder the action should deploy.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: doc-build # The folder the action should deploy.
