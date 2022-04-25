@@ -57,6 +57,7 @@ Using it
 
   If you run SO CLI without authenticating to the API, this error
   will appear:
+  
   .. error::
   
     .. code-block::
