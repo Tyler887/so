@@ -14,7 +14,7 @@ This is a tutorial about how to use the SO CLI.
 ----------------------------
 It's easy to install ``so``. However, the way to install it depends on your OS.
 
-.. tab:: macOS, BSD or GNU/Linux (Unix-like)
+.. tab:: :fas:`apple` :fas:`freebsd` macOS, BSD or GNU/Linux (Unix-like)
    
    .. warning::
       
@@ -36,7 +36,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
    from `Stack Apps
    <https://stackapps.com/questions/9375/placeholder-stackoverflow-cli>`_.
 
-.. tab:: Windows
+.. tab:: :fas:`windows` Windows
    
    .. note::
       
@@ -50,6 +50,26 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
    .. code-block:: powershell
       
       Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://github.com/Tyler887/so/raw/main/install.ps1')
+
+.. tab:: :fas:`question` Other
+   
+   If you do not use any listed OS, make sure `support for Python on that OS is avaliable
+   <https://pythondev.readthedocs.io/platforms.html>`_. This is because your OS will **not**
+   have any Python binaries if it is not supported.
+   
+   To compile, use PyInstaller:
+   
+   .. tab:: Unix-like
+   
+     .. code-block:: bash
+      
+        pyinstaller --console --noupx --name so ./StackOverflowCommandLine.py
+   
+   .. tab:: Windows-like
+     
+     .. code-block:: powershell
+        
+        pyinstaller --console --noupx --name so .\StackOverflowCommandLine.py
 
 :octicon:`play` Using it
 --------
@@ -83,3 +103,14 @@ is useful to check this out everyday so you can answer questions that still
 do not                      have                     an             answer.
 
 For more info, refer to the rest of the docs.
+
+Trademarks
+==========
+This document contains trademarks.
+
+Windows is a trademark of Microsoft.
+
+macOS is a trademark of Apple, Inc.
+
+FreeBSD and "The Power to Serve" is a registered trademark of the FreeBSD Foundation and used by the FreeBSD
+Project with permission.
