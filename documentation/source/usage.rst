@@ -2,10 +2,13 @@
    :maxdepth: 2
    :caption: Contents:
 
+.. tip::
+   
+   This document can also be viewed using ``so help howto``.
+
 Using the SO CLI
 ================
-This is a tutorial about how to use the CLI. This tutorial is specific to GNU/Linux (including WSL)
-and macOS, including BSD descendants. Any help for Windows is welcome.
+This is a tutorial about how to use the SO CLI.
 
 Installing
 ----------
@@ -50,7 +53,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
 
 Using it
 --------
-.. warning::
+.. todo::
 
   The SO CLI uses the Stack Exchange API, which requires you to approve
   the SO CLI when you try to use it.
