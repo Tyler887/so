@@ -35,7 +35,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
 
 .. tab:: Windows
    
-   .. warning::
+   .. info::
       
       SO CLI is not yet avaliable via Windows Package Manager. If popularity grows, I'll submit
       SO CLI to the Microsoft WinGet community repository for review when the project
@@ -57,15 +57,16 @@ Using it
 
   If you run SO CLI without authenticating to the API, this error
   will appear:
-
-  .. code-block::
+  .. error::
+  
+    .. code-block::
    
-     (x) Error: Please authenticate to the API using: so login
-         The Stack Overflow CLI uses the Stack Exchange API, so you need
-         to login to use the SO CLI.
+       (x) Error: Please authenticate to the API using: so login
+           The Stack Overflow CLI uses the Stack Exchange API, so you need
+           to login to use the SO CLI.
        
-       If you do not have a Stack Overflow account, you can safely
-       remove this program from your system: sudo rm /usr/bin/so
+           If you do not have a Stack Overflow account, you can safely
+           remove this program from your system: sudo rm /usr/bin/so
 
   So run ``so login``. Already logged in? If you moved to another account or just deleted your
   Stack Overflow profile, you need to run ``so logout`` to remove the app from
