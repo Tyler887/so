@@ -112,5 +112,6 @@ Windows is a trademark of Microsoft.
 
 macOS is a trademark of Apple, Inc.
 
-FreeBSD and "The Power to Serve" is a registered trademark of the FreeBSD Foundation and used by the FreeBSD
-Project with permission.
+FreeBSD and "The Power to Serve" is a registered trademark of the FreeBSD Foundation.
+
+All other trademarks are the property of their respective owners.
