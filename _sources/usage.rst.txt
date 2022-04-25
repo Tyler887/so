@@ -53,7 +53,7 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
 
 Using it
 --------
-.. todo::
+.. admonition:: Todo
 
   The SO CLI uses the Stack Exchange API, which requires you to approve
   the SO CLI when you try to use it.
