@@ -11,11 +11,11 @@ Installing
 ----------
 It's easy to install ``so``. However, the way to install it depends on your OS.
 
-.. tab:: macOS, *BSD or GNU/Linux (Unix-like)
+.. tab:: macOS, BSD or GNU/Linux (Unix-like)
    
    .. warning::
       
-      Stack Overflow CLI is not tested on macOS or *BSD, only on GNU/Linux and Windows.
+      Stack Overflow CLI is not tested on macOS or BSD descendants, only on GNU/Linux and Windows.
    
    Assuming that you have `Python
    <https://python.org>`_ (3.6 or newer required due to F-strings), including PyInstaller and everything in
