@@ -11,7 +11,7 @@ jobs:
     - name: Install Sphinx
       run: sudo apt-get update && sudo apt-get install -y python3-sphinx
     - name: Install furo theme and nox tool from PyPI
-      run: pip3 install furo nox
+      run: pip3 install nox
     - name: Install Sphinx tab/design extension
       run: pip3 install sphinx-inline-tabs sphinx-design
     - name: Build Sphinx docs
