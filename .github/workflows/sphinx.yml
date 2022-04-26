@@ -14,6 +14,8 @@ jobs:
       run: pip3 install nox
     - name: Install Sphinx tab/design extension
       run: pip3 install sphinx-inline-tabs sphinx-design
+    - name: Install theme
+      run: pip3 install sphinx-idf-theme
     - name: Build Sphinx docs
       run: nox -s docs
     - name: Upload artifact
