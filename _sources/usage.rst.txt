@@ -62,14 +62,16 @@ It's easy to install ``so``. However, the way to install it depends on your OS.
    .. tab:: Unix-like
    
      .. code-block:: bash
-      
-        pyinstaller --console --noupx --name so ./StackOverflowCommandLine.py
+        
+        pip3 install pyinstaller
+        python -m PyInstaller --console --noupx --name so ./StackOverflowCommandLine.py
    
    .. tab:: Windows-like
      
      .. code-block:: powershell
         
-        pyinstaller --console --noupx --name so .\StackOverflowCommandLine.py
+        py -m pip install pyinstaller
+        py -m PyInstaller --console --noupx --name so .\StackOverflowCommandLine.py
 
 :octicon:`play` Using it
 --------
