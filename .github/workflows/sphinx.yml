@@ -15,7 +15,7 @@ jobs:
     - name: Install Sphinx tab/design extension
       run: pip3 install sphinx-inline-tabs sphinx-design
     - name: Install theme
-      run: pip3 install sphinx-idf-theme
+      run: pip3 install furo
     - name: Build Sphinx docs
       run: nox -s docs
     - name: Upload artifact
